@@ -77,9 +77,9 @@ function toggleBurgerButton() {
     mailtoLink.classList.remove("menu__mailto--active");
     calltoLink.classList.remove("menu__callto--active");
     langWrapper.classList.remove("menu__lang-block--active");
-    langLink1.classList.remove("menu__lang-link--active");
-    langLink2.classList.remove("menu__lang-link--active");
-    langLink3.classList.remove("menu__lang-link--active");
+    langLink1.classList.remove("lang-radio-label--active");
+    langLink2.classList.remove("lang-radio-label--active");
+    langLink3.classList.remove("lang-radio-label--active");
     menu.classList.remove("menu--active");
     placeholder.classList.remove("placeholder--active");
     servicesBtnWrapper.classList.remove("services__btns-wrapper--hidden");
@@ -119,9 +119,9 @@ function toggleBurgerButton() {
     mailtoLink.classList.add("menu__mailto--active");
     calltoLink.classList.add("menu__callto--active");
     langWrapper.classList.add("menu__lang-block--active");
-    langLink1.classList.add("menu__lang-link--active");
-    langLink2.classList.add("menu__lang-link--active");
-    langLink3.classList.add("menu__lang-link--active");
+    langLink1.classList.add("lang-radio-label--active");
+    langLink2.classList.add("lang-radio-label--active");
+    langLink3.classList.add("lang-radio-label--active");
     menu.classList.add("menu--active");
     placeholder.classList.add("placeholder--active");
     servicesBtnWrapper.classList.add("services__btns-wrapper--hidden");

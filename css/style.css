@@ -31,7 +31,7 @@ body {
   min-height: 88px;
   width: 100%;
   background-color: #FFFFFF;
-  background-image: url("/img/placeholder.jpg");
+  background-image: url("../img/placeholder.jpg");
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -84,7 +84,7 @@ body {
 .more-btn{
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 141px;
   height: 24px;
@@ -98,11 +98,24 @@ body {
   cursor: pointer;
   font-weight: 500;
   padding-right: 9px;
+  position: relative;
 }
 
-.more-btn__img{
-  box-sizing: border-box;
+.more-btn::before {
+  content: '';
+  display: block;
+  width: 24px; 
+  height: 24px; 
+  background-image: url('../icons/more-btn.svg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute; 
+  right: 125px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
 }
+
 
 .burger-btn,
 .search-btn, 
@@ -136,16 +149,13 @@ body {
 .submit-btn:hover,
 .status-btn:hover {
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)) saturate(1.8);
-  transform: scale(1.05);
 }
 
 .burger-btn__img,
 .search-btn__img,
 .call-btn__img,
 .chat-btn__img,
-.profile-btn__img,
-.submit-btn__img,
-.status-btn__img {
+.profile-btn__img {
   box-sizing: border-box;
   display: block;
   margin: auto;
@@ -186,6 +196,10 @@ body {
 
   .upender__blur-overlay--active {
     min-height: 1857px;
+  }
+
+  .more-btn::before {
+    right: 117px;
   }
 }
 
